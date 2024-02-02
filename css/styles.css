@@ -1,0 +1,375 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+   
+}
+/* start giving styles for nav  */
+ #nav{
+    height: auto;
+    margin: 0 0;
+    padding-left: 15px;
+    padding-top: 15px;
+    background:#454545;
+    color: white;
+    padding-bottom: 15px;
+    border-radius: 5px;
+
+ }
+    
+
+    /* name or the logo of the company */
+    .logo {
+        font-family: "Ingrid Darling", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: #B2B6DF;
+        margin-top: -15px;
+     }
+     a{
+      text-decoration: none;
+      color: white;
+     }
+     @media(min-width:800px) {
+      .logo{
+         font-size: 60px;
+      }
+       
+     }
+      /* end of the name of company  */
+
+
+     /* humburger menu */
+       .menu-hum{
+        height: 35px;
+        width: 40px;
+        background: black;
+        border-radius: 5px;
+        border: 5px white;
+     }
+      .menu-hum:hover{
+         height:37px;
+         width:43px;
+         opacity: 60%;
+       }
+        
+      .hmenu-line{
+        height: 2px;
+        width: 30px;
+        background: white !important;
+        margin-top: 7px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 100%;
+        
+     }
+     
+
+      /* humburger menu end */
+
+
+     /* style for the search and its icon  */
+     #search-icon{
+        background-color: azure;
+        width: 40px;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        margin-left: -15px;
+     }
+      
+     /* end of the search and its icon */
+
+
+
+     /* start style of the navbar menu and it's icon  */
+     .navbar-menu-icon{
+        height: 25px;
+        margin: auto;
+        margin-top: 5px;
+    
+
+     }
+
+     .navbar-menu-icon:hover{
+      color: darkblue;
+      margin-left: 1px;
+     }
+
+     .navbar-menu:hover{
+        color: rgb(200, 200, 200);
+        margin-right: 5px;
+    
+     }
+
+
+/* End of the style for the navigation */
+
+
+
+/* Start the body style */
+
+  /* media queris for the body when screen size more than 1000px */
+  @media (min-width: 1001px) {
+    #widerscreen-space{
+      padding: 0px 25px;
+      margin: auto;
+    }
+   
+  }
+
+  @media (min-width: 1220px) {
+   #widerscreen-space{
+     padding:opx  30px;
+     margin: auto;
+   }
+  
+ }
+  @media(max-width:999px){
+   #widerscreen-space{
+      padding: 0 15px;
+   }
+  }
+
+    /* landing page first row style  */
+       #landing-page-bg-img{
+         background: url(../img/Manusingcomputer.jpg);
+         background-size: cover;
+         background-position: center;
+         display: flex;  
+         align-items: center;
+         justify-content: center; 
+         height: 100%;
+   
+      
+       } 
+        
+
+       /* 90% discount img style  */
+       #discount-img{
+         margin-left: 10%;
+         float: left;
+         margin-top: 30px;
+       }
+
+       /* greate offers in stores and online ! */
+       #h1forimg{
+         background-color: black;
+         color: white;
+         opacity: 60%;
+         margin-top: 80px;
+         border-radius: 10px;
+       }
+
+       #h1forimg h1{
+         font-size: 16px;
+      
+       }
+       #landing-page-bg-img > div > button{
+         background:rgb(254, 254, 0);
+         padding-left: 4px;
+         padding-right: 4px;
+         border-radius:20%;
+         margin-bottom: -1px;
+         opacity: 80%;
+       }
+       #landing-page-bg-img > div > button:hover{
+         color: white;
+         background-color: black;
+       }
+
+       #hello{
+         margin-bottom: -1;
+       }
+
+    /* landing page first row style end */
+
+    /* style for the second row of the body */
+       .second-row{
+         margin-top: 20px;
+        
+       }
+       #heading-of-second-row{
+         font-size: 25px;
+         margin: auto;
+         
+      
+
+       }
+       hr{
+         height: 2px;
+         background-color: rgb(0, 0, 0);
+         opacity: 100%;
+
+       }
+
+       #iphone{
+         width: 200px;
+         height: 200px;
+       }
+
+      
+       #items-features{
+       font-size: 16px;
+
+       }
+       #prices{
+        margin-left: 35%;
+        max-width: 100px;
+        background-color: #ffff00;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: -10px;
+       }
+       #pricess{
+        margin-left: 35%;
+        max-width: 80px;
+        color: white;
+        background-color: #ffad0c;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: -13px;
+        height: 40px;
+
+       }
+       .second-body-second-column > div >p{
+       margin: 0px;
+       }
+
+       .click:hover{
+        color: red;
+        }
+        /* End of the second row second column  */
+
+        /* start second row third column  */
+        #ovalshape-image{
+         position: relative;
+         width: 100%;
+         width: 80px;
+         height: 80px;
+         border: 1px solid red;
+         border-radius: 50%;
+         margin-left: 10px;
+        
+        }
+
+        #ovalshape-image:hover{
+         border: 2px solid black;
+        }
+        #ovalshape-image > img{
+         border-radius: 50%;
+        }
+        #item-description{
+         float: right;
+        }
+        #item-description > h3{
+         font-size: 18px;
+         width: 100%;
+        
+        }
+        #price{
+        background: #ffad0c;
+         border-radius: 5px;
+         font-size: 18px;
+        max-width: 70px;
+        }
+
+
+        /* end of the second row  third column  */
+
+
+        /* third row img code  start from here */
+         #third-row-img{
+          margin: 0px;
+         }
+         #tprices{
+          margin-left:10px;
+          max-width: 100px;
+          background-color: #ffff00;
+          border-radius: 5px;
+          font-weight: bold;
+          margin-top: -10px;
+          padding: 0 auto;
+         }
+         #tpricess{
+          margin-left:10px;
+          max-width: 80px;
+          color: white;
+          background-color: #ffad0c;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 25px;
+          margin-top: -13px;
+          height: 40px;
+  
+         }
+         #tprices > p{
+          margin-left: 4px;
+         }
+        #moving-center{
+          margin-left:0px;
+        }
+
+        @media(max-width:768px) {
+          #moving-center {
+            margin-left: 30%;
+          }
+          
+        }
+
+/* end of the body style */
+
+
+/* start a footer  */
+   footer {
+    background-color: #0f0d0d;
+    color: white;
+   }
+
+   #footer-img >img{
+   height: 30px;
+   float: right;
+   }
+   #footer-text{
+    float: right;
+    font-size: 20px;
+    
+   }
+   #footer-first-row > hr{
+   height: 0px;
+   }
+ 
+   #footer-heading{
+   font-size: 24px;
+   margin-top: 10px;
+   margin-left: 20%;
+   margin-bottom: -13px;
+   }
+
+   #hr{
+    height:1px;
+    background-color: white;
+    opacity: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+   }
+   #footer-row{
+    margin-top: -10px;
+   }
+   #company-copyright{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+   
+   }
+   #notice-products{
+    margin-top: 20px;
+    margin-bottom: 10px;
+   }
+   #ale{
+    margin-bottom: 20px;
+   }
+/* end of the footer */
+
+
