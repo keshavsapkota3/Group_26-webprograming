@@ -12,7 +12,7 @@
 # Project Name - Team Number
 
 A brief description of your web development project.
-Our project is all about shop of electronic items like watch, camera, phone, washing-machine.
+Our project is all about shop of electronic items like wristwatches, cameras, phones, washing-machines.
 
 ## Table of Contents
 - [Features](#features)
@@ -36,17 +36,23 @@ In this section, list and describe the features or functionality that you are wo
 
 Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
+This feature allow user to add a item to  the shopping cart and it will show the total amounts of slected itmes and it will go upto checkout the items.
+
 ### Feature 2
 
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+
+  In this feature if user login then user able to chat with customer service.
 
 ### Feature 3
 
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
+   In this feature  will add multiple items to our database and overtime flash sales item will be change.
+
 ### Feature 4
 
-Include more detailed information about Feature 4 here.User can left and check evaluation to production.
+Include more detailed information about Feature 4 here.User can left and check evaluation to production. 
 ---
 
 ## Database Tables
