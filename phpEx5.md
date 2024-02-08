@@ -12,7 +12,7 @@
 # Project Name - Team Number
 
 A brief description of your web development project.
-Our project is all about shop of electronic items like watch, camera, phone, washing-machine.
+Our project is all about shop of electronic items like wristwatches, cameras, phones, washing-machines.
 
 ## Table of Contents
 - [Features](#features)
