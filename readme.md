@@ -61,7 +61,15 @@ Include more detailed information about Feature 4 here.User can left and check e
 
 List the database tables that are part of your project. 
 
-- Table 1 (Created By): Table Name 
+- Table 1 (Created By Yan Zheng): Product_Reviews
+ [Product_Reviews]
++----------------+
+| id             |
+| product_id     |
+| review         |
+| review_time    |
++----------------+
+
 - Table 2 (Created By): Table Name 
 - Table 3 (Created By): Table Name 
 
@@ -84,7 +92,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Created By Yan Zheng): Product_Reviews | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
