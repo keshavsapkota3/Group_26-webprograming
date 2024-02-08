@@ -62,14 +62,16 @@ Include more detailed information about Feature 4 here.User can left and check e
 List the database tables that are part of your project. 
 
 - Table 1 (Created By Yan Zheng): Product_Reviews
- [Product_Reviews]
+
+```
+[Product_Reviews]
 +----------------+
 | id             |
 | product_id     |
 | review         |
 | review_time    |
 +----------------+
-
+```
 - Table 2 (Created By): Table Name 
 - Table 3 (Created By): Table Name 
 
