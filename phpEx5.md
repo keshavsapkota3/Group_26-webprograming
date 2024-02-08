@@ -29,7 +29,7 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 1 (Keshav Sapkota): I am going to make a feature for a shopping cart. 
 - [ ] Feature 2 (Jenish Shrestha): Work on Customer Service.
 - [ ] Feature 3 (Ijie Enaburekhan): I am working on the flash sales feature.
-- [ ] Feature 4 (Full Name): Title of the feature.
+- [ ] Feature 4 (Yan Zheng): Work on production feedback.
 > Add features as required.... 
 
 ### Feature 1
@@ -44,6 +44,9 @@ Include more detailed information about Feature 2 here. Provide links to related
 
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
+### Feature 4
+
+Include more detailed information about Feature 4 here.User can left and check evaluation to production.
 ---
 
 ## Database Tables
