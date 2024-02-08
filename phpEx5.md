@@ -36,17 +36,20 @@ In this section, list and describe the features or functionality that you are wo
 
 Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-    This feature allow user to add a item to  the shopping cart and it will show the total amounts of slected itmes and it will go upto checkout the items.
+This feature allow user to add a item to  the shopping cart and it will show the total amounts of slected itmes and it will go upto checkout the items.
 
 ### Feature 2
 
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+
   In this feature if user login then user able to chat with customer service.
 
 ### Feature 3
 
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+
    In this feature  will add multiple items to our database and overtime flash sales item will be change.
+   
 ---
 
 ## Database Tables
