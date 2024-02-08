@@ -27,9 +27,9 @@ Our project is all about shop of electronic items like watch, camera, phone, was
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Feature 1 (Keshav Sapkota): I am going to make a feature for a shopping cart. 
-- [ ] Feature 2 (Ijie Enaburekhan):I am Updating The flash Sales...
-- [ ] Feature 3 (Full Name): Title of the feature.
-
+- [ ] Feature 2 (Jenish Shrestha): Work on Customer Service.
+- [ ] Feature 3 (Ijie Enaburekhan): I am working on the flash sales feature.
+- [ ] Feature 4 (Full Name): Title of the feature.
 > Add features as required.... 
 
 ### Feature 1
