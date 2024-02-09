@@ -106,7 +106,7 @@
           <div>
             <p id="pricess">1500€</p>
           </div>
-           
+ 
 
           </div>
         <!-- first column flash sales end  -->
@@ -243,9 +243,11 @@
            <div id="tprices">
             <p >save 50€</p>
            </div>
-          <div>
+         <div style="display: flex; align-items: center;">
             <p id="tpricess">1500€</p>
-          </div>
+            <p style="margin-left:70px;">    <?php $product_id = 1;include './loadingfeedback.php'; ?></p>
+    </div>
+
       </div>
       <!-- end first items  -->
 
@@ -257,9 +259,10 @@
             <div id="tprices">
              <p >save 50€</p>
             </div>
-           <div>
-             <p id="tpricess">1050€</p>
-           </div>
+          <div style="display: flex; align-items: center;">
+            <p id="tpricess">1050€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 2; include './loadingfeedback.php'; ?></p>
+    </div>
       
          
            
@@ -276,9 +279,10 @@
             <div id="tprices">
              <p >save 50€</p>
             </div>
-           <div>
-             <p id="tpricess">750€</p>
-           </div>
+          <div style="display: flex; align-items: center;">
+            <p id="tpricess">750€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 3; include './loadingfeedback.php'; ?></p>
+    </div>
        </div>
 
        <!-- items3 end -->
@@ -292,33 +296,36 @@
    <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
     <img src="img/tv.png" id="iphone" class="img-fluid" alt="Smart tv">
        <h6>Samsung Smart <br> 32 inch Q-led Tv</h6>
-        <p id="items-features">32" 120 Hz FHD+ HDR QLED screen</p>
-        <p>Quantum Processor 4K</p>
-        <p>4K@120Hz, FreeSync, VRR, ALLM, HGiG</p>
-        <p></p>
+        <p id="items-features">32" 120 Hz FHD+ HDR QLED screen <br/>Quantum Processor 4K <br/>
+       4K@120Hz, FreeSync, VRR, ALLM, HGiG
+       </p>
+
         <div id="tprices">
          <p >save 50€</p>
+
         </div>
-       <div>
-         <p id="tpricess">550€</p>
-       </div>
+        <div style="display: flex; align-items: center;">
+            <p id="tpricess">550€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 4; include './loadingfeedback.php'; ?></p>
+    </div>
    </div>
    <!-- end first items  -->
 
    <!-- items 2 -->
-    <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-      <img src="img/HP Laptop 14-em0008no 14 laptop, Win 11 .png" id="iphone" class="img-fluid" alt="Hp laptops">
-        <h6>IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
-         <p id="items-features">AMD Ryzen™ 7 5825U processor<br>15.6" FHD SVA screen</p>
-         <div id="tprices">
-          <p >save 50€</p>
-         </div>
-        <div>
-          <p id="tpricess">600€</p>
-        </div>
-    </div>
-   <!-- items2 end  -->
+   <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
+    <img src="img/HP Laptop 14-em0008no 14 laptop, Win 11 .png" id="iphone" class="img-fluid" alt="Hp laptops">
+    <h6>IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
+    <p id="items-features">AMD Ryzen™ 7 5825U processor<br>15.6" FHD SVA screen</p>
 
+        <div id="tprices">
+            <p>save 50€</p>
+        </div>
+      <div style="display: flex; align-items: center;">
+            <p id="tpricess">550€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 5; include './loadingfeedback.php'; ?></p>
+    </div>
+</div>
+   <!-- items2 end  -->
    <!-- items3 start  -->
      <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
       <img src="img/jbl.png" id="iphone" class="img-fluid" alt="JBL Speaker">
@@ -328,9 +335,13 @@
          <div id="tprices">
           <p >save 50€</p>
          </div>
-        <div>
-          <p id="tpricess">250€</p>
-        </div>
+      <div style="display: flex; align-items: center;">
+            <p id="tpricess">250€</p>
+            <p style="margin-left:70px;">    <?php
+$product_id = 6;
+include './loadingfeedback.php';
+ ?></p>
+    </div>
     </div>
 
     <!-- items3 end -->
