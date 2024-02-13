@@ -15,7 +15,17 @@
     border-radius: 5px;
 
  }
-    
+
+  .review {
+    text-align: center;
+    margin: 20px;
+}
+
+.review-time {
+    display: block; /* 或者使用margin-top来添加更多间隔 */
+    margin-top: 10px;
+}
+  
 
     /* name or the logo of the company */
     .logo {
