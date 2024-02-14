@@ -1,7 +1,7 @@
 <?php
-$servername = "db"; // Replace with your MySQL server hostname
+$servername = "prog23"; // Replace with your MySQL server hostname
 $username = "team26";     // Replace with your MySQL username
-$password = "password";     // Replace with your MySQL password
+$password = "bbcap23_26";     // Replace with your MySQL password
 $dbname = "team26";       // Replace with the name of your MySQL database
 
 // Create a database connection

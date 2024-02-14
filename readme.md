@@ -28,7 +28,7 @@ In this section, list and describe the features or functionality that you are wo
 
 - [ ] Feature 1 (Keshav Sapkota): I am going to make a feature for a shopping cart. 
 - [ ] Feature 2 (Jenish Shrestha): Work on Customer Service.
-- [ ] Feature 3 (Ijie Enaburekhan): I am working on the flash sales feature.
+- [ ] Feature 3 (Ijie Enaburekhan): i created a sign up form, validated it, and created a post request to the data base where a table is created already.
 - [ ] Feature 4 (Yan Zheng): Work on production feedback.
 > Add features as required.... 
 
