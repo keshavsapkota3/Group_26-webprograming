@@ -383,3 +383,30 @@
 /* end of the footer */
 
 
+/* Login page designing */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.login-form {
+  margin-bottom: 20px;
+}
+.login-btn {
+  background-color: #1877f2;
+  border: none;
+  margin-top: 5px;
+}
+.login-btn:hover {
+  background-color: #1466c1;
+}
+.form-group{
+  margin-top: 10px;
+}
+
+#forgetpassword >a{
+  color: #1877f2;
+}

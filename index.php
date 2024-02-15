@@ -284,14 +284,10 @@
             <div id="tprices">
              <p >save 50€</p>
             </div>
-           <div>
-             <p id="tpricess">1050€</p>
-             <input type="hidden" name="price" id="price_input">
-             <input type="hidden" name="items[2][price]" value="1050">
-           </div>
-           <button type="submit" class="btn btn-danger" name="submit">Add cart</button>
-          </form>
-       </div>
+          <div style="display: flex; align-items: center;">
+            <p id="tpricess">1050€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 2; include './loadingfeedback.php'; ?></p>
+    </div>
       
       <!-- items2 end  -->
 
