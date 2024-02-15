@@ -42,7 +42,7 @@ This feature allow user to add a item to  the shopping cart and it will show the
 
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-  In this feature if user login then user able to chat with customer service.
+  In this feature  user login.
 
 ### Feature 3
 

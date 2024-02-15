@@ -22,7 +22,7 @@
 }
 
 .review-time {
-    display: block; /* »òÕßÊ¹ÓÃmargin-topÀ´Ìí¼Ó¸ü¶à¼ä¸ô */
+    display: block; /* ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½margin-topï¿½ï¿½ï¿½ï¿½ï¿½Ó¸ï¿½ï¿½ï¿½ï¿½ï¿½ */
     margin-top: 10px;
 }
   
@@ -306,7 +306,7 @@
           margin-left:10px;
           max-width: 80px;
           color: white;
-          background-color: #ffad0c;
+          background-color: #ffad0c !important;
           border-radius: 5px;
           font-weight: bold;
           font-size: 25px;
@@ -410,3 +410,16 @@
 #forgetpassword >a{
   color: #1877f2;
 }
+
+
+
+.btn  {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .btn:active {
+    
+    transform: scale(1.1) !important; 
+    background-color: #fcfc0b !important; 
+    color: black !important;
+  }

@@ -10,6 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
+    <style>
+   button   {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  button:active {
+    
+    transform: scale(1.1) !important; 
+    background-color: #fcfc0b !important; 
+    color: black !important;
+  }
+    </style>
 </head>
 <body>
 
@@ -49,8 +61,8 @@
     <!-- nav menu start  -->
     <div class="col-lg-5  col justify-content-evenly  d-none d-sm-none d-md-none d-lg-flex align-content-center">
          <div class="navbar-menu d-flex">
-            <p> Customer <br>services</p>
-            <img src="img/chat-fill.svg" alt="img of the svg" class="navbar-menu-icon">
+          <a href="costomer.php"><p> Customer <br>services</p></a>
+                      <img src="img/chat-fill.svg" alt="img of the svg" class="navbar-menu-icon">
 
          </div>
          <div class="navbar-menu d-flex" >
@@ -58,11 +70,11 @@
             <img src="img/geo-alt-fill.svg" alt="img of the location" class="navbar-menu-icon">
          </div>
          <div class="navbar-menu d-flex">
-            <p>Shopping carts</p>
+            <p><a href="selecteditems.php">Shopping carts</a></p>
             <img src="img/basket.svg" alt="the shopping cart" class="navbar-menu-icon">
          </div>
          <div class="navbar-menu d-flex">
-            <p><a href="login.html">login</a></p>
+            <p><a href="login.php">login</a></p>
             <img src="img/person-fill.svg" alt="the user login icon" class="navbar-menu-icon">
          </div>
     </div>
@@ -218,6 +230,7 @@
     <hr>
 
 
+
     <!-- third row of the body start where is picture of phone will appear  -->
     <div class="row">
        <div class="col-lg-6 col-12 img-fluid" id="third-row-img"><img src="img/iphone2.png" alt="this is the picture of the iagepnone on landing p"></div>
@@ -236,50 +249,77 @@
    
     <div class="row justify-content-center align-items-center " id="moving-center">
        <!-- items1 -->
+
+      
       <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-       <img src="img/iphone15pro.png" id="iphone" class="img-fluid" alt="Iphone 15 promax">
-          <h6>IPhone 15 ProMax  Dual SIM 256GB <br>15MegaPixel Rear Camera</h6>
-           <p id="items-features">. Front camera 15Pixel <br>. Back Camera 48 Pixel</p>
+        <form class="addItems" action="cart.php" method="POST">
+       <img src="img/iphone15pro.png" id="iphone" class="img-fluid" alt="Iphone 15 promax" name="img">
+          <h6 id="description1">IPhone 15 ProMax  Dual SIM 256GB <br>15MegaPixel Rear Camera</h6>
+          <input type="hidden" name="items[1][description]" value="IPhone 15 ProMax  Dual SIM 256GB 15MegaPixel Rear Camera">
+           <p id="items-features" name="features">. Front camera 15Pixel <br>. Back Camera 48 Pixel</p>
            <div id="tprices">
-            <p >save 50€</p>
+            <p  >save 50€</p>
            </div>
           <div>
             <p id="tpricess">1500€</p>
+            <input type="hidden" name="items[1][price]" value="1500">
           </div>
+          <button type="submit" class="btn btn-danger" name="submit">Add cart</button>
+        </form>
       </div>
+     
+     
       <!-- end first items  -->
 
       <!-- items 2 -->
+     
        <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-         <img src="img/APPLE IPHONE 14 128 GT STAR WHITE.png" id="iphone" class="img-fluid" alt="Iphone 14">
-           <h6>IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
-            <p id="items-features">. Front camera 15Pixel <br>. Back Camera 48 Pixel</p>
+        <form class="addItems" action="cart.php" method="POST">
+
+         <img src="img/APPLE IPHONE 14 128 GT STAR WHITE.png" id="iphone" class="img-fluid" alt="Iphone 14" name="img">
+           <h6  id="description2">IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
+           <input type="hidden" name="items[2][description]" value="IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera">
+
+            <p id="items-features" name="features">. Front camera 15Pixel <br>. Back Camera 48 Pixel</p>
             <div id="tprices">
              <p >save 50€</p>
             </div>
            <div>
              <p id="tpricess">1050€</p>
+             <input type="hidden" name="price" id="price_input">
+             <input type="hidden" name="items[2][price]" value="1050">
            </div>
-      
-         
-           
-
+           <button type="submit" class="btn btn-danger" name="submit">Add cart</button>
+          </form>
        </div>
+      
       <!-- items2 end  -->
 
       <!-- items3 start  -->
+
+      
         <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-         <img src="img/Smart-watches.png" id="iphone" class="img-fluid" alt="Smart watch">
-           <h6>APPLE WATCH ULTRA 2 GPS <br>CELLULAR, 49MM TITANIUM CASE, BLUE ALPINE STRAP - MEDIUM</h6>
-            <p id="items-features">GPS + Cellular <br>Environmentally responsible production<br>
+          <form class="addItems" action="cart.php" method="POST">
+           
+
+         <img src="img/Smart-watches.png" id="iphone" class="img-fluid" alt="Smart watch" name="img">
+           <h6 id="description3">APPLE WATCH ULTRA 2 GPS <br>CELLULAR, 49MM TITANIUM CASE, BLUE ALPINE STRAP - MEDIUM</h6>
+           <input type="hidden" name="items[3][description]" value="APPLE WATCH ULTRA 2 GPS <br>CELLULAR, 49MM TITANIUM CASE, BLUE ALPINE STRAP - MEDIUM">
+
+            <p id="items-features" name="features">GPS + Cellular <br>Environmentally responsible production<br>
               M - fits 145-190 mm wrists</p>
             <div id="tprices">
              <p >save 50€</p>
             </div>
            <div>
-             <p id="tpricess">750€</p>
+             <p id="tpricess" name="price">750€</p>
+             <input type="hidden" name="items[3][price]" value="750">
            </div>
+           <button type="submit" class="btn btn-danger" name="submit">Add cart</button>
+          </form>
        </div>
+
+      
 
        <!-- items3 end -->
     </div>
@@ -289,40 +329,62 @@
   <!-- fifth row of the vody start  -->
   <div class="row justify-content-center align-items-center " id="moving-center">
     <!-- items1 -->
+    
    <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-    <img src="img/tv.png" id="iphone" class="img-fluid" alt="Smart tv">
-       <h6>Samsung Smart <br> 32 inch Q-led Tv</h6>
-        <p id="items-features">32" 120 Hz FHD+ HDR QLED screen</p>
-        <p>Quantum Processor 4K</p>
-        <p>4K@120Hz, FreeSync, VRR, ALLM, HGiG</p>
+    <form class="addItems" action="cart.php" method="POST">
+    <img src="img/tv.png" id="iphone" class="img-fluid img" alt="Smart tv" >
+    <input type="hidden" name="img4" id="img_input">
+
+       <h6 id="description4">Samsung Smart <br> 32 inch Q-led Tv</h6>
+       <input type="hidden" name="items[4][description]" value="Samsung Smart <br> 32 inch Q-led Tv">
+       <p id="items-features" name="features">32" 120 Hz FHD+ HDR QLED screen <br>
+        Quantum Processor 4K <br>
+        4K@120Hz, FreeSync, VRR, ALLM, HGiG 
+       </p>
         <p></p>
         <div id="tprices">
-         <p >save 50€</p>
+         <p id="discounts">save 50€</p>
+         <input type="hidden" name="discount" id="discount_input">
         </div>
        <div>
-         <p id="tpricess">550€</p>
-       </div>
+         <p id="tpricess"  class="tpricess" >550€</p>
+         <input type="hidden" name="items[4][price]" value="550">
+        </div>
+       <button type="submit" class="btn btn-danger" name="submit">Add cart</button>
+      </form>
    </div>
+  
    <!-- end first items  -->
 
    <!-- items 2 -->
     <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
+      <form class="addItems" action="cart.php" method="POST">
       <img src="img/HP Laptop 14-em0008no 14 laptop, Win 11 .png" id="iphone" class="img-fluid" alt="Hp laptops">
-        <h6>IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
-         <p id="items-features">AMD Ryzen™ 7 5825U processor<br>15.6" FHD SVA screen</p>
+
+        <h6 id="description5">IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
+        <input type="hidden" name="items[5][description]" value="IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera">
+        <p id="items-features">AMD Ryzen™ 7 5825U processor<br>15.6" FHD SVA screen</p>
          <div id="tprices">
           <p >save 50€</p>
          </div>
         <div>
           <p id="tpricess">600€</p>
+          <input type="hidden" name="items[5][price]" value="600">
         </div>
+        <button type="submit" class="btn btn-danger" name="submit5">Add cart</button>
+      </form>
     </div>
    <!-- items2 end  -->
 
    <!-- items3 start  -->
      <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
+      <form class="addItems" action="cart.php" method="POST">
       <img src="img/jbl.png" id="iphone" class="img-fluid" alt="JBL Speaker">
-        <h6>Portable party speaker with light effects <br>and wireless microphone</h6>
+        <h6 id="description6">Portable party speaker with light effects <br>and wireless microphone</h6>
+        <input type="hidden" name="items[6][description]" value="Portable party speaker with light effects <br>and wireless microphone">
+
+        <input type="hidden" name="description6" id="description_input">
+
          <p id="items-features">JBL Pro Sound with 100 W power<br>Battery life: 6 hours<br>Water resistant (IPX4)
            </p>
          <div id="tprices">
@@ -330,7 +392,10 @@
          </div>
         <div>
           <p id="tpricess">250€</p>
+          <input type="hidden" name="items[6][price]" value="250">
         </div>
+        <button type="submit" class="btn btn-danger" name="submit6">Add cart</button>
+      </form>
     </div>
 
     <!-- items3 end -->
@@ -428,6 +493,8 @@
 
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="datavalidation.js"></script>
+
 
 
 </body>
