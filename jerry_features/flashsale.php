@@ -1,8 +1,9 @@
 <?php
 
-include_once 'db.php';
+include_once '';
+?>
 
-
+<?php
 $product_id = $_POST['id'];
 $name = $_POST['product_name'];
 $original_price = $_POST['original_price'];

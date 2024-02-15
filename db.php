@@ -1,8 +1,8 @@
 <?php
-$servername = "db"; // Replace with your MySQL server hostname
-$username = "team26";     // Replace with your MySQL username
-$password = "password";     // Replace with your MySQL password
-$dbname = "team26";       // Replace with the name of your MySQL database
+$servername = 'prog23-db-1'; // Replace with your MySQL server hostname
+$username = 'team26';     // Replace with your MySQL username
+$password = 'password';     // Replace with your MySQL password
+$dbname = 'team26';       // Replace with the name of your MySQL database
 
 // Create a database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,5 +11,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+$conn->close();
 ?>
-<?php
+
