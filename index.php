@@ -260,7 +260,7 @@
              <p >save 50€</p>
             </div>
           <div style="display: flex; align-items: center;">
-            <p id="tpricess">1050€</p>
+            <p id="tpricess">12050€</p>
             <p style="margin-left:70px;">    <?php $product_id = 2; include './loadingfeedback.php'; ?></p>
     </div>
       
