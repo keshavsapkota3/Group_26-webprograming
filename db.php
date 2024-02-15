@@ -1,4 +1,4 @@
-<?php
+??<?php
 $servername = "db"; // Replace with your MySQL server hostname
 $username = "team26";     // Replace with your MySQL username
 $password = "password";     // Replace with your MySQL password
