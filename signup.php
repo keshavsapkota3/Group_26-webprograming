@@ -1,78 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form</title>
-  <style>
-    .error{
-      color: red;
-    }
-  </style>
-</head>
-<body>
-<div class="cointainer">
-  <form id="myForm" action="process1.php" method="POST">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
-    <span id="usernameError" class="error"></span>
+<?php
+include("header.php");
+?>
 
-    <br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email">
-    <span id="emailerror" class="error"></span>
-<br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-    <span id="passwordError" class="error"></span>
 
-    <br>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-  <script>
-    
-    function validateForm() {
-   
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
-      var email = document.getElementById('email').value;
-
-    
-      document.getElementById('usernameError').innerHTML = 'Please enter your username';
-      document.getElementById('passwordError').innerHTML = 'Enter a correct password';
-      document.getElementById('emailerror').innerHTML = 'Enter a correct Email';
-
-    
-      if (username.trim() === '') {
-        document.getElementById('usernameError').innerHTML = 'Username is required';
-        return false;
-      }
-      if (email.trim() === ''|| !email.trim().includes("@")) {
-        document.getElementById('emailerror').innerHTML = 'email is required';
-        return false;
-      }
-
+<!-- login page body start  -->
+<div class="container">
+  <div class="login-container">
+     <h4 class="text-center mb-4">Register with us</h4>
+        <form action="signupprocess.php" method="POST">
       
-      if (password.trim() === '') {
-        document.getElementById('passwordError').innerHTML = 'Password is required';
-        return false;
-      }
-
-      return true;
-    }
-
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-      
-      event.preventDefault();
-
-      
-      if (validateForm()) {
+            <div class="form-group">
+               <input type="text" class="form-control mb-1" id="FirstAndLastName" name="FandLName" placeholder="First and Last Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mb-1" id="PhoneNumber" name="pNumber" placeholder="PuheliNumero">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="username1" placeholder="Email address">
+            </div>
+           <div class="form-group">
        
-        alert('Form submitted successfully!');
-      }
-    });
-  </script>
-</body>
-</html>
+              <input type="password" class="form-control mb-1" id="password" name="password1" placeholder="Password">
+            </div>
+            <div class="ml-5">
+             <button  type="submit" name="submit"  class="btn btn-primary">Sign Up</button>
+            </div>
+       </form>
+    </div>
+</div>
+<!-- login page body end  -->
+<?php
+include("footer.php");
+?>

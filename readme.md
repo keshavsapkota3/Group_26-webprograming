@@ -27,13 +27,8 @@ Our project is all about shop of electronic items like wristwatches, cameras, ph
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Feature 1 (Keshav Sapkota): I am going to make a feature for a shopping cart. 
-<<<<<<< HEAD
-- [ ] Feature 2 (Jenish Shrestha): Work on User Login.
-- [ ] Feature 3 (Ijie Enaburekhan): I am working on the flash sales feature.
-=======
 - [ ] Feature 2 (Jenish Shrestha): Work on Customer Service.
-- [ ] Feature 3 (Ijie Enaburekhan): i created a sign up form, validated it, and created a post request to the data base where a table is created already.
->>>>>>> yanz
+- [ ] Feature 3 (Ijie Enaburekhan): I am working on the flash sales feature.
 - [ ] Feature 4 (Yan Zheng): Work on production feedback.
 > Add features as required.... 
 
@@ -47,7 +42,7 @@ This feature allow user to add a item to  the shopping cart and it will show the
 
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-  In this feature if user login then user able to chat with customer service.
+  In this feature  user login.
 
 ### Feature 3
 

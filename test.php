@@ -10,54 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
-    <style>
-   button   {
-    cursor: pointer;
-    margin-left: 10px;
-  }
-  button:active {
-    
-    transform: scale(1.1) !important; 
-    background-color: #fcfc0b !important; 
-    color: black !important;
-  }
-  .navbar-menu-icon {
-        height: 20px;
-        margin: auto;
-        margin-top: 5px;
-    
-
-     }
-
-     .navbar-menu-icon:hover{
-      color: darkblue;
-     }
-    /* Styling for the popup menu */
-    .popup-menu {
-        margin-top: 40px;
-        display: none;
-        color: black;
-        position: absolute;
-        background-color: #070000;
-        padding: 10px;
-        border: 1px solid #aaa;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        width: 200px;
-    }
-    
-    /* Styling for menu items */
-    .menu-item1 >a{
-        cursor: pointer;
-        padding: 5px 0;
-    }
-    .menu-item1:hover  {
-       background-color: #aaa;
-       color: white;
-       border-radius: 3px;
-
-    }
-    </style>
 </head>
 <body>
 
@@ -67,27 +19,19 @@
     <!-- logo and the humburger menu -->
 
     <div class="col-lg-1 col-3 col-sm-1 d-flex justify-content-evenly ">
-        <div class="menu-hum icon " id="icon" onclick="toggleMenu()" >
+        <div class="menu-hum ">
                <div class="hmenu-line"></div> 
                <div  class="hmenu-line" ></div>
                <div  class="hmenu-line"></div>
         </div>
     </div>
 
-    <!-- Popup Menu -->
-<div class="popup-menu" id="popupMenu">
-  <div class="menu-item1"><a href="mobile.html">Mobile devices</a></div>
-  <div class="menu-item1"><a href="laptop.html">Laptops</a></div>
-  <div class="menu-item1"><a href="wmachine.html">Washing Machine</a> </div>
-  <div class="menu-item1"><a href="headphone.html">HeadPhone</a></div>
-</div>
-
-    <div class="logo col-lg-3 col-5 col-sm-3"><a href="index.php">  ElectroHub</a></div> 
+    <div class="logo col-lg-3 col-5 col-sm-3"><a href="index.html">  ElectroHub</a></div> 
 
     <!-- adding icon form xsm screen size -->
     <div class="col-4 d-flex d-sm-none d-md-none d-lg-none d-xxl-none">
-        <a href="login.php" class="navbar-menu-icon"><img src="img/person-fill.svg" alt="login option" class=" col-6"></a>
-        <a href="customer.php" class="navbar-meenu-icon"> <img src="img/chat-fill.svg" alt="chat with customer" class=" col-6"></a> 
+        <img src="img/person-fill.svg" alt="login option" class="navbar-menu-icon col-6">
+        <img src="img/chat-fill.svg" alt="chat with customer" class="navbar-menu-icon col-6">
     </div>
       
     <!-- logo and the humburger menu end  -->
@@ -105,20 +49,20 @@
     <!-- nav menu start  -->
     <div class="col-lg-5  col justify-content-evenly  d-none d-sm-none d-md-none d-lg-flex align-content-center">
          <div class="navbar-menu d-flex">
-          <a href="customer.php"> <h1><p> Customer <br>services</p></h1></a>
-                      <img src="img/chat-fill.svg" alt="img of the svg" class="navbar-menu-icon">
+            <p> Customer <br>services</p>
+            <img src="img/chat-fill.svg" alt="img of the svg" class="navbar-menu-icon">
 
          </div>
          <div class="navbar-menu d-flex" >
-           <a href="#"><h1><p>Stores</p></h1></a> 
+            <p>Stores</p>
             <img src="img/geo-alt-fill.svg" alt="img of the location" class="navbar-menu-icon">
          </div>
          <div class="navbar-menu d-flex">
-            <a href="selecteditems.php"> <h1><p>Shopping carts</p></h1></a>
+            <p>Shopping carts</p>
             <img src="img/basket.svg" alt="the shopping cart" class="navbar-menu-icon">
          </div>
          <div class="navbar-menu d-flex">
-            <a href="login.php"><h1><p>login</p></h1></a>
+            <p><a href="login.html">login</a></p>
             <img src="img/person-fill.svg" alt="the user login icon" class="navbar-menu-icon">
          </div>
     </div>
@@ -126,9 +70,9 @@
 
     <!-- smaller screen nav menu  -->
     <div class="col-2  d-flex d-sm-flex d-md-flex d-lg-none d-xxl-none"> 
-      <a href="selecteditems.php"><img src="img/basket.svg" alt="the shopping basket" class="navbar-menu-icon"></a>
-      <a href="login.php"><img src="img/person-fill.svg" alt="login person icon" class="d-none d-sm-flex d-md-flex navbar-menu-icon"></a>
-      <a href="customer.php"> <img src="img/chat-fill.svg" alt="customer service" class="d-none d-sm-flex d-md-flex navbar-menu-icon"></a>
+      <img src="img/basket.svg" alt="the shopping basket" class="navbar-menu-icon">
+      <img src="img/person-fill.svg" alt="login person icon" class="d-none d-sm-flex d-md-flex navbar-menu-icon">
+      <img src="img/chat-fill.svg" alt="customer service" class="d-none d-sm-flex d-md-flex navbar-menu-icon">
     </div>
     <!-- smaller screen nav menu end  -->
   </nav>
@@ -162,7 +106,7 @@
           <div>
             <p id="pricess">1500€</p>
           </div>
-           
+ 
 
           </div>
         <!-- first column flash sales end  -->
@@ -274,10 +218,9 @@
     <hr>
 
 
-
     <!-- third row of the body start where is picture of phone will appear  -->
     <div class="row">
-       <div class="col-lg-6 col-12 d-none d-sm-none d-md-flex img-fluid" id="third-row-img"><img src="img/iphone2.png" alt="this is the picture of the iagepnone on landing p"></div>
+       <div class="col-lg-6 col-12 img-fluid" id="third-row-img"><img src="img/iphone2.png" alt="this is the picture of the iagepnone on landing p"></div>
        <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-flex img-fluid"><img src="img/iphone3.png" alt="this is the picture of the iagepnone on landing p"></div>
     </div>
     <!-- this is the end of the third row  -->
@@ -293,87 +236,54 @@
    
     <div class="row justify-content-center align-items-center " id="moving-center">
        <!-- items1 -->
-
-      
       <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-        <form class="addItems" action="cart.php" method="POST">
-       <img src="img/iphone15pro.png" id="iphone" class="img-fluid" alt="Iphone 15 promax" name="img">
-          <h6 id="description1">IPhone 15 ProMax  Dual SIM 256GB <br>15MegaPixel Rear Camera</h6>
-          <input type="hidden" name="items[1][description]" value="IPhone 15 ProMax  Dual SIM 256GB 15MegaPixel Rear Camera">
-           <p id="items-features" name="features">. Front camera 15Pixel <br>. Back Camera 48 Pixel</p>
+       <img src="img/iphone15pro.png" id="iphone" class="img-fluid" alt="Iphone 15 promax">
+          <h6>IPhone 15 ProMax  Dual SIM 256GB <br>15MegaPixel Rear Camera</h6>
+           <p id="items-features">. Front camera 15Pixel <br>. Back Camera 48 Pixel</p>
            <div id="tprices">
-            <p  >save 50€</p>
+            <p >save 50€</p>
            </div>
-          <div>
+         <div style="display: flex; align-items: center;">
             <p id="tpricess">1500€</p>
-            <input type="hidden" name="items[1][price]" value="1500">
-          </div>
-          <div class="row">
-            <button type="submit" class="btn btn-danger col-3" name="submit">Add cart</button>
-            <button  class="btn btn-danger col-3">Add cart</button>
-          </div>
-        </form>
+            <p style="margin-left:70px;">    <?php $product_id = 1;include './loadingfeedback.php'; ?></p>
+    </div>
+
       </div>
-     
-     
       <!-- end first items  -->
 
       <!-- items 2 -->
-     
        <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-        <form class="addItems" action="cart.php" method="POST">
-
-         <img src="img/APPLE IPHONE 14 128 GT STAR WHITE.png" id="iphone" class="img-fluid" alt="Iphone 14" name="img">
-           <h6  id="description2">IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
-           <input type="hidden" name="items[2][description]" value="IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera">
-
-            <p id="items-features" name="features">. Front camera 15Pixel <br>. Back Camera 48 Pixel</p>
+         <img src="img/APPLE IPHONE 14 128 GT STAR WHITE.png" id="iphone" class="img-fluid" alt="Iphone 14">
+           <h6>IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
+            <p id="items-features">. Front camera 15Pixel <br>. Back Camera 48 Pixel</p>
             <div id="tprices">
              <p >save 50€</p>
             </div>
-           <div>
-             <p id="tpricess">1050€</p>
-             <input type="hidden" name="price" id="price_input">
-             <input type="hidden" name="items[2][price]" value="1050">
-           </div>
-           <div class="row">
-            <button type="submit" class="btn btn-danger col-3" name="submit">Add cart</button>
-            <button  class="btn btn-danger col-3">Add cart</button>
-          </div>
-           
-          </form>
-       </div>
+          <div style="display: flex; align-items: center;">
+            <p id="tpricess">1050€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 2; include './loadingfeedback.php'; ?></p>
+    </div>
       
+         
+           
+
+       </div>
       <!-- items2 end  -->
 
       <!-- items3 start  -->
-
-      
         <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-          <form class="addItems" action="cart.php" method="POST">
-           
-
-         <img src="img/Smart-watches.png" id="iphone" class="img-fluid" alt="Smart watch" name="img">
-           <h6 id="description3">APPLE WATCH ULTRA 2 GPS <br>CELLULAR, 49MM TITANIUM CASE, BLUE ALPINE STRAP - MEDIUM</h6>
-           <input type="hidden" name="items[3][description]" value="APPLE WATCH ULTRA 2 GPS <br>CELLULAR, 49MM TITANIUM CASE, BLUE ALPINE STRAP - MEDIUM">
-
-            <p id="items-features" name="features">GPS + Cellular <br>Environmentally responsible production<br>
+         <img src="img/Smart-watches.png" id="iphone" class="img-fluid" alt="Smart watch">
+           <h6>APPLE WATCH ULTRA 2 GPS <br>CELLULAR, 49MM TITANIUM CASE, BLUE ALPINE STRAP - MEDIUM</h6>
+            <p id="items-features">GPS + Cellular <br>Environmentally responsible production<br>
               M - fits 145-190 mm wrists</p>
             <div id="tprices">
              <p >save 50€</p>
             </div>
-           <div>
-             <p id="tpricess" name="price">750€</p>
-             <input type="hidden" name="items[3][price]" value="750">
-           </div>
-           <div class="row">
-            <button type="submit" class="btn btn-danger col-3" name="submit">Add cart</button>
-            <button  class="btn btn-danger col-3"><a style="margin:0px;" href="selecteditems.php">View cart</a></button>
-          </div>
-          </form>
+          <div style="display: flex; align-items: center;">
+            <p id="tpricess">750€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 3; include './loadingfeedback.php'; ?></p>
+    </div>
        </div>
-
-      
 
        <!-- items3 end -->
     </div>
@@ -383,73 +293,55 @@
   <!-- fifth row of the vody start  -->
   <div class="row justify-content-center align-items-center " id="moving-center">
     <!-- items1 -->
-    
    <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-    <form class="addItems" action="cart.php" method="POST">
-    <img src="img/tv.png" id="iphone" class="img-fluid img" alt="Smart tv" >
-    <input type="hidden" name="img4" id="img_input">
-
-       <h6 id="description4">Samsung Smart <br> 32 inch Q-led Tv</h6>
-       <input type="hidden" name="items[4][description]" value="Samsung Smart <br> 32 inch Q-led Tv">
-       <p id="items-features" name="features">32" 120 Hz FHD+ HDR QLED screen <br>
-        Quantum Processor 4K <br>
-        4K@120Hz, FreeSync, VRR, ALLM, HGiG 
+    <img src="img/tv.png" id="iphone" class="img-fluid" alt="Smart tv">
+       <h6>Samsung Smart <br> 32 inch Q-led Tv</h6>
+        <p id="items-features">32" 120 Hz FHD+ HDR QLED screen <br/>Quantum Processor 4K <br/>
+       4K@120Hz, FreeSync, VRR, ALLM, HGiG
        </p>
-        <p></p>
+
         <div id="tprices">
-         <p id="discounts">save 50€</p>
-         <input type="hidden" name="discount" id="discount_input">
+         <p >save 50€</p>
+
         </div>
-       <div>
-         <p id="tpricess"  class="tpricess" >550€</p>
-         <input type="hidden" name="items[4][price]" value="550">
-        </div>
-       <button type="submit" class="btn btn-danger" name="submit">Add cart</button>
-      </form>
+        <div style="display: flex; align-items: center;">
+            <p id="tpricess">550€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 4; include './loadingfeedback.php'; ?></p>
+    </div>
    </div>
-  
    <!-- end first items  -->
 
    <!-- items 2 -->
-    <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-      <form class="addItems" action="cart.php" method="POST">
-      <img src="img/HP Laptop 14-em0008no 14 laptop, Win 11 .png" id="iphone" class="img-fluid" alt="Hp laptops">
+   <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
+    <img src="img/HP Laptop 14-em0008no 14 laptop, Win 11 .png" id="iphone" class="img-fluid" alt="Hp laptops">
+    <h6>IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
+    <p id="items-features">AMD Ryzen™ 7 5825U processor<br>15.6" FHD SVA screen</p>
 
-        <h6 id="description5">IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera</h6>
-        <input type="hidden" name="items[5][description]" value="IPhone 14 128GT STAR WHITE <br>15MegaPixel Rear Camera">
-        <p id="items-features">AMD Ryzen™ 7 5825U processor<br>15.6" FHD SVA screen</p>
-         <div id="tprices">
-          <p >save 50€</p>
-         </div>
-        <div>
-          <p id="tpricess">600€</p>
-          <input type="hidden" name="items[5][price]" value="600">
+        <div id="tprices">
+            <p>save 50€</p>
         </div>
-        <button type="submit" class="btn btn-danger" name="submit5">Add cart</button>
-      </form>
+      <div style="display: flex; align-items: center;">
+            <p id="tpricess">550€</p>
+            <p style="margin-left:70px;">    <?php $product_id = 5; include './loadingfeedback.php'; ?></p>
     </div>
+</div>
    <!-- items2 end  -->
-
    <!-- items3 start  -->
      <div class="col-12 col-md-6 col-lg-3 justify-content-center align-content-center">
-      <form class="addItems" action="cart.php" method="POST">
       <img src="img/jbl.png" id="iphone" class="img-fluid" alt="JBL Speaker">
-        <h6 id="description6">Portable party speaker with light effects <br>and wireless microphone</h6>
-        <input type="hidden" name="items[6][description]" value="Portable party speaker with light effects <br>and wireless microphone">
-
-        <input type="hidden" name="description6" id="description_input">
-
+        <h6>Portable party speaker with light effects <br>and wireless microphone</h6>
          <p id="items-features">JBL Pro Sound with 100 W power<br>Battery life: 6 hours<br>Water resistant (IPX4)
            </p>
          <div id="tprices">
           <p >save 50€</p>
          </div>
-        <div>
-          <p id="tpricess">250€</p>
-          <input type="hidden" name="items[6][price]" value="250">
-        </div>
-        <button type="submit" class="btn btn-danger" name="submit6">Add cart</button>
-      </form>
+      <div style="display: flex; align-items: center;">
+            <p id="tpricess">250€</p>
+            <p style="margin-left:70px;">    <?php
+$product_id = 6;
+include './loadingfeedback.php';
+ ?></p>
+    </div>
     </div>
 
     <!-- items3 end -->
@@ -543,9 +435,11 @@
     </footer>
 <!-- footer code end -->
 
+
+
 <script src="js/bootstrap.js"></script>
-<script src="js/script.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/datavalidation.js"></script>
+
+
 </body>
 </html>

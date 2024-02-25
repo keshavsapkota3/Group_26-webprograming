@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Menu Icon</title>
+<style>
+    /* Styling for the icon */
+    .icon {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    /* Styling for the popup menu */
+    .popup-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    /* Styling for menu items */
+    .menu-item1 {
+        cursor: pointer;
+        padding: 5px 0;
+    }
+</style>
+</head>
+<body>
+
+<!-- Icon -->
+<div class="icon" onclick="toggleMenu()">☰</div>
+
+<!-- Popup Menu -->
+<div class="popup-menu" id="popupMenu">
+    <div class="menu-item1" onclick="alert('Menu Item 1 clicked')">Menu Item 1</div>
+    <div class="menu-item1" onclick="alert('Menu Item 2 clicked')">Menu Item 2</div>
+    <div class="menu-item1" onclick="alert('Menu Item 3 clicked')">Menu Item 3</div>
+</div>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("popupMenu");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,27 +1,31 @@
 <?php
-include 'db.php';
-include 'header.php';
+include("db.php");
+include("header.php");
 
 $totalPrice = 0;
-$finalprice=0;
-$discount=0;
+$finalprice = 0;
+$discount = 0;
 
 // Check if form is submitted
-if (isset($_POST['submit'])) {
-    // accessing username and password from the form
-    $username2= $_POST['username'];
-    $password2 = $_POST['password'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['submit'])) {
+        // accessing username and password from the form
+        $username2 = $_POST['username'];
+        $password2 = $_POST['password'];
 
-    // Check if the username and password match  in the database
-    $sql = "SELECT * FROM Users WHERE username1 = '$username2' AND password1 = '$password2'";
-    $result = $conn->query($sql);
+        // Use prepared statement to prevent SQL injection
+        $stmt = $conn->prepare("SELECT * FROM Users WHERE username1 = ? AND password1 = ?");
+        $stmt->bind_param("ss", $username2, $password2);
+        $stmt->execute();
+        $result = $stmt->get_result();
 
-    if ($result->num_rows > 0) {
-        // User found in the database, apply 10% discount
-        $discount = 0.1;
-        echo "Congratulations! You've received a 10% discount.";
-    } else {
-        echo "Invalid username or password.";
+        if ($result->num_rows > 0) {
+            // User found in the database, apply 10% discount
+            $discount = 0.1;
+            echo "<p style='margin-left:10%; font-size:35px; font-weight:bold;'>Congratulations! You've received a 10% discount.</p>";
+        } else {
+            echo "Invalid username or password.";
+        }
     }
 }
 
@@ -29,8 +33,11 @@ if (isset($_POST['submit'])) {
 if (isset($_POST['delete']) && isset($_POST['item_id'])) {
     $item_id = $_POST['item_id'];
 
-    $sql = "DELETE FROM Cart WHERE id = $item_id";
-    if ($conn->query($sql) === TRUE) {
+    $sql = "DELETE FROM Cart WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $item_id);
+    
+    if ($stmt->execute()) {
         echo "Removed successfully 😊";
     } else {
         echo "Error deleting item: " . $conn->error;
@@ -68,12 +75,15 @@ if ($result === false) {
                     </td>
                   </tr>";
 
-           // Accumulate the price
-           $totalPrice += $row['price'];
+            // Accumulate the price
+            $totalPrice += $row['price'];
         }
-           $discount=$discount*$totalPrice;
+        
+        // Calculate discount amount
+        $discountAmount = $totalPrice * $discount;
+        
         // Calculate final price after applying discount
-        $finalprice = $totalPrice - $discount;
+        $finalprice = $totalPrice - $discountAmount;
 
         echo "</tbody>
               <tfoot>
@@ -81,29 +91,28 @@ if ($result === false) {
                       <td colspan='2'>Total Price:</td>
                       <td>{$totalPrice} €</td>
                       <td>Discount:</td>
-                      <td>{$discount} €</td>
+                      <td>{$discountAmount} €</td>
                       <td>Final Price:</td>
                       <td>{$finalprice} €</td>
                   </tr>
               </tfoot>
               </table>";
 
+        echo "<p style='margin-left:30%;'>  If you are member then grab the discount <h2 style='margin-left:30%;'> Ale 😊 Ale 😊</h2></p>";
 
-              echo"<p style='margin-left:30%;'>  If you are member then grab the discount <h2 style='margin-left:30%;'> Ale 😊 Ale 😊</h2></p>";
-                      // Display the form for username and password input
-echo "<form action='" . $_SERVER['PHP_SELF'] . "' class='form-control' style='margin-top: 20px;'>
-        <label for='username' style='font-weight: bold; margin-bottom:10px;'>Username:</label>
-        <input type='text' id='username' name='username' style='padding: 5px;margin-bottom:10px;'><br>
-        <label for='password' style='font-weight: bold;'>Password:</label>
-        <input type='password' id='password' name='password' style='padding: 5px;'><br>
-        <button type='submit' name='submit' style='background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; margin-top: 10px; margin-left: 80px;'>Apply Discount</button>
-        </form>";
-
+        // Display the form for username and password input
+        echo "<form action='" . $_SERVER['PHP_SELF'] . "' method='post' class='form-control' style='margin-top: 20px;'>
+                <label for='username' style='font-weight: bold; margin-bottom:10px;'>Username:</label>
+                <input type='text' id='username' name='username' style='padding: 5px;margin-bottom:10px;'><br>
+                <label for='password' style='font-weight: bold;'>Password:</label>
+                <input type='password' id='password' name='password' style='padding: 5px;'><br>
+                <button type='submit' name='submit' style='background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; margin-top: 10px; margin-left: 80px;'>Apply Discount</button>
+              </form>";
     } else {
         echo "No results";
     }
 }
 
 $conn->close();
-include 'footer.php';
+include("footer.php");
 ?>
