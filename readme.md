@@ -34,7 +34,7 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 1
 
-  In this user can add items to the shopping cart and can see the items in cart. If user already signup to our webpage they can have 10% discount. For discount you have signup through the login icon and after that you can apply discount by putting your username and the password. Provide links to related code files[Github writing to the database ](https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/cart.php) [Github Reading from the database](https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/cart.php)  & link to the feature[shell.hamk.fi] (http://shell.hamk.fi/~keshav22000/Group_26-webprograming/selecteditems.php) .
+  In this user can add items to the shopping cart and can see the items in cart. If user already signup to our webpage they can have 10% discount. For discount you have signup through the login icon and after that you can apply discount by putting your username and the password. Provide links to related code files[Github writing to the database ](https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/cart.php).    This is [Github Reading from the database](https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/cart.php)  & link to the feature[shell.hamk.fi](http://shell.hamk.fi/~keshav22000/Group_26-webprograming/selecteditems.php).
   This feature allow user to add a item to  the shopping cart and it will show the total amounts of slected itmes and it will go upto checkout the items.
 
 ### Feature 2
