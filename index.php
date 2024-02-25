@@ -61,7 +61,7 @@
     <!-- nav menu start  -->
     <div class="col-lg-5  col justify-content-evenly  d-none d-sm-none d-md-none d-lg-flex align-content-center">
          <div class="navbar-menu d-flex">
-          <a href="costomer.php"><p> Customer <br>services</p></a>
+          <a href="costomer.php"> <h6><p> Customer <br>services</p></h6></a>
                       <img src="img/chat-fill.svg" alt="img of the svg" class="navbar-menu-icon">
 
          </div>
