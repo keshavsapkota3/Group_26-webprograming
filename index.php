@@ -309,13 +309,10 @@
             <input type="hidden" name="items[1][price]" value="1500">
           </div>
           <div class="row">
-<<<<<<< HEAD
+
             <button type="submit" class="btn btn-danger col-3 mr-2" name="submit">Add cart</button>
             <button  onclick="window.location.href='selecteditems.php'"  class="btn btn-danger col-3">view cart</button>
-=======
-            <button type="submit" class="btn btn-danger col-3" name="submit">Add cart</button>
-            <button  class="btn btn-danger col-3">Add cart</button>
->>>>>>> 69e92003dfb516800643302a4929e22715bf34b9
+
           </div>
         </form>
       </div>
@@ -342,13 +339,8 @@
              <input type="hidden" name="items[2][price]" value="1050">
            </div>
            <div class="row">
-<<<<<<< HEAD
             <button type="submit" class="btn btn-danger col-3 mr-2" name="submit">Add cart</button>
             <button  onclick="window.location.href='selecteditems.php'"  class="btn btn-danger col-3">view cart</button>
-=======
-            <button type="submit" class="btn btn-danger col-3" name="submit">Add cart</button>
-            <button  class="btn btn-danger col-3">Add cart</button>
->>>>>>> 69e92003dfb516800643302a4929e22715bf34b9
           </div>
            
           </form>
@@ -377,13 +369,9 @@
              <input type="hidden" name="items[3][price]" value="750">
            </div>
            <div class="row">
-<<<<<<< HEAD
             <button type="submit" class="btn btn-danger col-3 mr-2" name="submit">Add cart</button>
             <button  onclick="window.location.href='selecteditems.php'"  class="btn btn-danger col-3">view cart</button>
-=======
-            <button type="submit" class="btn btn-danger col-3" name="submit">Add cart</button>
-            <button  class="btn btn-danger col-3"><a style="margin:0px;" href="selecteditems.php">View cart</a></button>
->>>>>>> 69e92003dfb516800643302a4929e22715bf34b9
+       
           </div>
           </form>
        </div>
