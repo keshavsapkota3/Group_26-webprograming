@@ -24,8 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $discount = 0.1;
             echo "<p style='margin-left:10%; font-size:35px; font-weight:bold;'>Congratulations! You've received a 10% discount.</p>";
         } else {
+<<<<<<< HEAD
             echo "<p style=' margin-left:15%; font-size:25px; font-weight:bold; color: red;'> You are not a member withus to grab a discount!!!! <br>
             For discount signup with us by clicking login from nav</p>.";
+=======
+            echo "Invalid username or password.";
+>>>>>>> 69e92003dfb516800643302a4929e22715bf34b9
         }
     }
 }
