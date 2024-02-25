@@ -27,14 +27,14 @@ Our project is all about shop of electronic items like wristwatches, cameras, ph
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Feature 1 (Keshav Sapkota): I am going to make a feature for a shopping cart. 
-- [ ] Feature 2 (Jenish Shrestha): Work on Customer Service.
-- [ ] Feature 3 (Ijie Enaburekhan): I am working on the flash sales feature.
+- [ ] Feature 2 (Jenish Shrestha): Work on User login.
+- [ ] Feature 3 (Ijie Enaburekhan): Signup Features.
 - [ ] Feature 4 (Yan Zheng): Work on production feedback.
 > Add features as required.... 
 
 ### Feature 1
 
-Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+  In this user can add items to the shopping cart and can see the items in cart. If user already signup to our webpage they can have 10% discount. For discount you have signup through the login icon and after that you can apply discount by putting your username and the password. Provide links to related code files[Gi](https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/cart.php) [Github Reading](https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/cart.php)  & link to the feature[http://shell.hamk.fi/~keshav22000/Group_26-webprograming/selecteditems.php] (Shell.hamk.fi) .
 
 This feature allow user to add a item to  the shopping cart and it will show the total amounts of slected itmes and it will go upto checkout the items.
 

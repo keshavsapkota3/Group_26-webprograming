@@ -7,12 +7,15 @@
  #nav{
     height: auto;
     margin: 0 0;
+    
     padding-left: 15px;
     padding-top: 25px;
     background:#454545;
     color: white;
     padding-bottom: 15px;
     border-radius: 5px;
+  
+    width: 100%;
 
  }
 
@@ -195,6 +198,7 @@
          border-radius:20%;
          margin-bottom: -1px;
          opacity: 80%;
+      
        }
        #landing-page-bg-img > div > button:hover{
          color: white;
@@ -229,6 +233,8 @@
        #iphone{
          width: 200px;
          height: 200px;
+        
+         
        }
 
       
