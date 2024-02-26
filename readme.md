@@ -39,7 +39,7 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 2
 
-Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+In this features user can login if they have already signup, In login password and the user name must be same as the signup email and the password. After login user can view their profile detail and can delete or unregister  them from our website. Provide links to related code files [Github link login] (https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/loginprocess.php) & link to the feature [shell.hamk.fi](http://shell.hamk.fi/~jenish22000/Group_26-webprograming/login.php) .
 
   In this feature  user login.
 
