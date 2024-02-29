@@ -41,22 +41,14 @@ In this section, list and describe the features or functionality that you are wo
 
 In this features user can login if they have already signup, In login password and the user name must be same as the signup email and the password. After login user can view their profile detail and can delete or unregister  them from our website. Provide links to related code files [Github link login] (https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/loginprocess.php) & link to the feature [shell.hamk.fi](http://shell.hamk.fi/~jenish22000/Group_26-webprograming/login.php) .
 
-  In this feature  user login.
+  In this feature  user login
 
 ### Feature 3
 
-Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+I have created the signUp page where user can register to our website. Provide links to related code files [][Github Link](https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/signup.php) & link to the feature[Shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_26/Group_26-webprograming/signup.php) .
 
    In this feature  will add multiple items to our database and overtime flash sales item will be change.
 
-### Feature 4
-
-Include more detailed information about Feature 4 here.
-
-User can left and check evaluation to production. 
-
-
----
 
 ## Database Tables
 
@@ -73,33 +65,15 @@ List the database tables that are part of your project.
 | review_time    |
 +----------------+
 ```
-- Table 2 (Created By): Table Name 
-- Table 3 (Created By): Table Name 
-
+- Table 2 (Keshav Sapkota): cart
+![image](img/cart.png) 
+- Table 3 (jenish Shrestha and Ijie Enaburekhan): Users
+   ![image](img/logintable.png)
 > Include the ER Diagram of the database. 
 
 ---
 
-## Created Forms
 
-List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
-
-- Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-- Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-
-
----
-
-## Created Tables
-
-List any tables that you have created in the project work
-
-- Table 1 (Created By Yan Zheng): Product_Reviews | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-
----
 
 
 

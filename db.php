@@ -1,5 +1,5 @@
 <?php
-$servername = "web-project"; // Replace with your MySQL server hostname
+$servername = "web-project-db-1"; // Replace with your MySQL server hostname
 $username = "root";     // Replace with your MySQL username
 $password = "password";     // Replace with your MySQL password
 $dbname = "login";       // Replace with the name of your MySQL database
