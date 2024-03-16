@@ -28,7 +28,7 @@ In this section, list and describe the features or functionality that you are wo
 
 - [ ] Feature 1 (Keshav Sapkota): I am going to make a feature for a shopping cart. 
 - [ ] Feature 2 (Jenish Shrestha): Work on User login.
-- [ ] Feature 3 (Ijie Enaburekhan): Signup Features.
+- [ ] Feature 3 (Ijie Enaburekhan): product feature.
 - [ ] Feature 4 (Yan Zheng): Work on production feedback.
 > Add features as required.... 
 
@@ -45,7 +45,7 @@ In this features user can login if they have already signup, In login password a
 
 ### Feature 3
 
-I have created the signUp page where user can register to our website. Provide links to related code files [][Github Link](https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/signup.php) & link to the feature[Shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_26/Group_26-webprograming/signup.php) .
+I have created the product page where admin can add, update, delete and view produts (https://github.com/keshavsapkota3/Group_26-webprograming/blob/gh-pages/products.php) & link to the feature[Shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_26/Group_26-webprograming/product.php) .
 
    In this feature  will add multiple items to our database and overtime flash sales item will be change.
 
